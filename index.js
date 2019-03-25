@@ -10,22 +10,24 @@ function multiply(a, b) {
   return(a * b);
 }
 
-it('divide(a, b) divides a by b and returns the result', function() {
-  expect(divide(a, b)).toEqual(a / b)
-})
 
-it('inc(n) increments n and returns the result', function() {
-  expect(inc(a)).toEqual(a + 1)
-})
+function divide(a, b) {
+  return(a / b);
+}
 
-it('dec(n) decrements n and returns the result', function() {
-  expect(dec(a)).toEqual(a - 1)
-})
+function inc(a) {
+  a += 1;
+  return(a);
+}
 
-describe('makeInt(n)', function() {
-  it('parses n as an integer and returns the parsed integer', function() {
-    expect(makeInt(a.toString())).toEqual(a)
-  })
+function dec(a) {
+  a -= 1;
+  return(a);
+}
+
+function makeInt(a) {
+  return(parseInt(a, 10));
+}
 
   it('assumes base 10', function() {
     expect(makeInt('0x2328')).toEqual(0)
