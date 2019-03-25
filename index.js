@@ -6,9 +6,9 @@ function subtract(a, b) {
   return(a - b);
 }
 
-it('multiply(a, b) multiplies two numbers and returns the result', function() {
-  expect(multiply(a, b)).toEqual(a * b)
-})
+function multiply(a, b) {
+  return(a * b);
+}
 
 it('divide(a, b) divides a by b and returns the result', function() {
   expect(divide(a, b)).toEqual(a / b)
